@@ -1,0 +1,26 @@
+.contacto {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 780px) {
+  .form-label {
+    font-size: $enlacenav;
+  }
+}
+.section-title h2 {
+  color: $fondoVerde;
+  text-align: center;
+}
+.contacto {
+  margin: auto;
+}
+.form-control {
+  background-color: $fondoVioletadeg;
+  font-size: $enlacenav;
+}
+.btnform {
+  background-color: $fondoVioleta;
+  color: white;
+  text-shadow: 5px 2px 4px white;
+  width: 5rem !important;
+}

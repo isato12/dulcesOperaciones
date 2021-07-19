@@ -1,0 +1,273 @@
+/******************************burbuja azul****************************************/
+.texto_presentacionAzul {
+  height: 80px; /**/
+  width: 300px;
+  border: 5px solid $fondoAzulClaro;
+  position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+  margin: 50px auto;
+  color: $fondoAzulClaro;
+  text-align: center;
+  padding: 20px;
+}
+.texto_presentacionAzul::after {
+  content: "";
+  position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+  top: -30px;
+  left: 120px;
+  border-top: 30px solid $fondoAzulClaro; /* Para ver más claramente, primero configure un color diferente del marco */
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(180deg);
+}
+
+/******************************burbuja morada****************************************/
+.texto_presentacionMorado {
+  height: 80px; /**/
+  width: 300px;
+  border: 5px solid $FondoAzul;
+  position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+  margin: 50px auto;
+  color: $FondoAzul;
+  text-align: center;
+  padding: 20px;
+}
+.texto_presentacionMorado::after {
+  content: "";
+  position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+  top: 70px;
+  left: 120px;
+  border-top: 30px solid $FondoAzul; /* Para ver más claramente, primero configure un color diferente del marco */
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+/******************************burbuja roja****************************************/
+
+.texto_presentacionRojo {
+  height: 80px; /**/
+  width: 300px;
+  border: 5px solid $fondoRojo;
+  position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+  margin: 50px auto;
+  color: $fondoRojo;
+  text-align: center;
+  padding: 20px;
+}
+.texto_presentacionRojo::after {
+  content: "";
+  position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+  top: -30px;
+  left: 120px;
+  border-top: 30px solid $fondoRojo; /* Para ver más claramente, primero configure un color diferente del marco */
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(180deg);
+}
+
+/******************************burbuja multi****************************************/
+.texto_presentacionMulti {
+  height: 80px;
+  width: 300px;
+  margin: 50px auto;
+  background: linear-gradient(
+    90deg,
+    rgba(44, 63, 234, 1) 0%,
+    rgba(44, 161, 215, 1) 100%
+  );
+  position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  transition: all 0.5s ease;
+}
+.texto_presentacionMulti::before {
+  content: "";
+  position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+  top: -30px;
+  left: 120px;
+  border-top: 30px solid rgba(44, 63, 234, 1); /* Para ver más claramente, primero configure un color diferente del marco */
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(44, 63, 234, 1) 0%,
+    rgba(44, 161, 215, 1) 100%
+  );
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+.texto_presentacionMulti::after {
+  content: "";
+  position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+  top: 80px;
+  left: 120px;
+  border-top: 30px solid rgba(44, 161, 215, 1); /* Para ver más claramente, primero configure un color diferente del marco */
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(44, 63, 234, 1) 0%,
+    rgba(44, 161, 215, 1) 100%
+  );
+  transition: all 0.5s ease;
+}
+
+/******************************burbuja azul****************************************/
+@media (min-width: 780px) {
+  .texto_presentacionAzul {
+    height: 400px;
+    width: 400px;
+    border: 5px solid $fondoAzulClaro;
+    position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+    padding: 160px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: $fondoAzulClaro;
+    transition: all 0.5s ease;
+    margin: 0;
+  }
+  .texto_presentacionAzul::after {
+    content: "";
+    position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    top: 200px;
+    left: -45px;
+    border-top: 30px solid $fondoAzulClaro; /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(85deg);
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionAzul:hover {
+    background-color: $fondoAzulClaro;
+    color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+/******************************burbuja morada****************************************/
+
+@media (min-width: 780px) {
+  .texto_presentacionMorado {
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    border: 5px solid $FondoAzul;
+    position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+    padding: 160px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: $FondoAzul;
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionMorado::after {
+    content: "";
+    position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    top: 200px;
+    left: 378px;
+    border-top: 30px solid $FondoAzul; /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(-85deg);
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionMorado:hover {
+    background-color: $FondoAzul;
+    color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+/******************************burbuja roja****************************************/
+
+@media (min-width: 780px) {
+  .texto_presentacionRojo {
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    border: 5px solid $fondoRojo;
+    position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+    padding: 180px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: $fondoRojo;
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionRojo::after {
+    content: "";
+    position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    top: 200px;
+    left: -45px;
+    border-top: 30px solid $fondoRojo; /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(85deg);
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionRojo:hover {
+    background-color: $fondoRojo;
+    color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+/******************************burbuja multi****************************************/
+
+@media (min-width: 780px) {
+  .texto_presentacionMulti {
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(44, 63, 234, 1) 0%,
+      rgba(44, 161, 215, 1) 100%
+    );
+    position: relative; /* Establecer el posicionamiento relativo del elemento padre, el pseudo elemento se puede colocar de acuerdo con el elemento padre */
+    padding: 180px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionMulti::before {
+    content: "";
+    position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    top: 200px;
+    left: -40px;
+    border-top: 30px solid rgba(44, 63, 234, 1); /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    background: linear-gradient(
+      90deg,
+      rgba(44, 63, 234, 1) 0%,
+      rgba(44, 161, 215, 1) 100%
+    );
+    transform: rotate(85deg);
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionMulti::after {
+    content: "";
+    position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    top: 200px;
+    left: 378px;
+    border-top: 30px solid rgba(44, 161, 215, 1); /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    background: linear-gradient(
+      90deg,
+      rgba(44, 63, 234, 1) 0%,
+      rgba(44, 161, 215, 1) 100%
+    );
+    transform: rotate(-85deg);
+    transition: all 0.5s ease;
+  }
+  .texto_presentacionMulti:hover {
+    background-color: linear-gradient(
+      90deg,
+      rgba(44, 161, 215, 1) 0%,
+      rgba(44, 63, 234, 1) 100%
+    );
+    color: black;
+    transition: all 0.5s ease;
+  }
+}

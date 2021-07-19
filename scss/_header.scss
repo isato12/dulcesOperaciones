@@ -1,0 +1,133 @@
+.wave {
+  background-image: url(../assets/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 10rem 0;
+}
+.navbar .nav-link {
+  color: white;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  transition: 0.2s;
+  &:hover {
+    color: $fondoVerde;
+    transition: all 0.6s;
+  }
+}
+.navbar-collapse {
+  padding: 1rem;
+}
+.navbar-toggler {
+  padding: 0.1rem 0.45rem;
+  border: 1px solid white;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler i.bi-list {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.navback {
+  background-color: red;
+}
+.btn-custom {
+  border: 1.5px solid #fff;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+  color: #fff;
+  background: none;
+  padding: 8px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.6s;
+  &:hover {
+    color: $fondoVerde;
+    background-color: white;
+    transition: all 0.6s;
+  }
+}
+.texto_header {
+  margin-top: 8rem;
+  padding-top: 2rem;
+}
+.d {
+  color: $amarillo;
+}
+.u {
+  color: $fondoRojo;
+}
+.l {
+  color: $FondoAzul;
+}
+.c {
+  color: $fondoAzulClaro;
+}
+.e {
+  color: $fondoVioleta;
+}
+.s {
+  color: $fondoVerde;
+}
+
+h1 .o {
+  color: $fondoVerde;
+  text-transform: uppercase;
+}
+.p {
+  color: $amarillo;
+}
+.e {
+  color: $fondoRojo;
+}
+.r {
+  color: $FondoAzul;
+}
+.a {
+  color: $fondoAzulClaro;
+}
+.c {
+  color: $fondoVioleta;
+}
+.i {
+  color: $fondoVerde;
+}
+.od {
+  color: $amarillo;
+}
+.n {
+  color: $fondoRojo;
+}
+.e {
+  color: $FondoAzul;
+}
+.s {
+  color: $fondoAzulClaro;
+}
+
+.parhero {
+  display: block;
+}
+.logoGoogle {
+  margin: 2rem auto;
+  padding: 3rem 0;
+  display: block;
+  width: 20rem;
+  transition: all 0.5;
+}
+.logoGoogle:hover {
+  width: 21rem;
+}
+@media (min-width: 780px) {
+  .texto_header {
+    margin: 10rem auto;
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 780px) {
+  h1 .o {
+    font-size: $fontSizeLogo;
+  }
+}
