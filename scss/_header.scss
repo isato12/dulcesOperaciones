@@ -78,32 +78,42 @@ h1 .o {
 }
 .p {
   color: $amarillo;
+  animation: cambiandoColor 2s infinite alternate;
 }
 .e {
   color: $fondoRojo;
+  animation: cambiandoColor 2s infinite alternate;
 }
 .r {
   color: $FondoAzul;
+  animation: cambiandoColor 2s infinite alternate;
 }
 .a {
   color: $fondoAzulClaro;
+  animation: cambiandoColor 2s infinite alternate;
 }
 .c {
+  animation: cambiandoColor 2s infinite alternate;
   color: $fondoVioleta;
 }
 .i {
+  animation: cambiandoColor 2s infinite alternate;
   color: $fondoVerde;
 }
 .od {
+  animation: cambiandoColor 2s infinite alternate;
   color: $amarillo;
 }
 .n {
+  animation: cambiandoColor 2s infinite alternate;
   color: $fondoRojo;
 }
 .e {
+  animation: cambiandoColor 2s infinite alternate;
   color: $FondoAzul;
 }
 .s {
+  animation: cambiandoColor 2s infinite alternate;
   color: $fondoAzulClaro;
 }
 

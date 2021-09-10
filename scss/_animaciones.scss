@@ -1,0 +1,20 @@
+@keyframes cambiandoColor {
+  0% {
+    color: $fondoRojo;
+  }
+  20% {
+    color: $FondoAzul;
+  }
+  40% {
+    color: $fondoAzulClaro;
+  }
+  60% {
+    color: $fondoVioleta;
+  }
+  80% {
+    color: $fondoVerde;
+  }
+  100% {
+    color: $amarillo;
+  }
+}

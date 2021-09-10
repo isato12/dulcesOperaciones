@@ -80,6 +80,20 @@ h1 {
   font-weight: bold;
   margin-bottom: 5rem; }
 
+@keyframes cambiandoColor {
+  0% {
+    color: #ff0000; }
+  20% {
+    color: #2c3fea; }
+  40% {
+    color: #2ca1d7; }
+  60% {
+    color: #7b1fa2; }
+  80% {
+    color: #12d552; }
+  100% {
+    color: #94a21f; } }
+
 .wave {
   background-image: url(../assets/header.png);
   background-repeat: no-repeat;
@@ -156,33 +170,43 @@ h1 .o {
   text-transform: uppercase; }
 
 .p {
-  color: #94a21f; }
+  color: #94a21f;
+  animation: cambiandoColor 2s infinite alternate; }
 
 .e {
-  color: #ff0000; }
+  color: #ff0000;
+  animation: cambiandoColor 2s infinite alternate; }
 
 .r {
-  color: #2c3fea; }
+  color: #2c3fea;
+  animation: cambiandoColor 2s infinite alternate; }
 
 .a {
-  color: #2ca1d7; }
+  color: #2ca1d7;
+  animation: cambiandoColor 2s infinite alternate; }
 
 .c {
+  animation: cambiandoColor 2s infinite alternate;
   color: #7b1fa2; }
 
 .i {
+  animation: cambiandoColor 2s infinite alternate;
   color: #12d552; }
 
 .od {
+  animation: cambiandoColor 2s infinite alternate;
   color: #94a21f; }
 
 .n {
+  animation: cambiandoColor 2s infinite alternate;
   color: #ff0000; }
 
 .e {
+  animation: cambiandoColor 2s infinite alternate;
   color: #2c3fea; }
 
 .s {
+  animation: cambiandoColor 2s infinite alternate;
   color: #2ca1d7; }
 
 .parhero {
