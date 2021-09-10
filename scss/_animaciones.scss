@@ -18,3 +18,23 @@
     color: $amarillo;
   }
 }
+@keyframes moviendoLetras {
+  0% {
+    transform: rotatex(10deg);
+  }
+  20% {
+    transform: rotatex(-10deg);
+  }
+  40% {
+    transform: rotatex(20deg);
+  }
+  60% {
+    transform: rotatex(-20deg);
+  }
+  80% {
+    transform: rotatex(20deg);
+  }
+  100% {
+    transform: rotatex(-20deg);
+  }
+}

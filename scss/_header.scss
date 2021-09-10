@@ -55,65 +55,99 @@
 }
 .d {
   color: $amarillo;
+  animation: cambiandoColor 1.4s infinite alternate,
+    moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease;
 }
 .u {
+  animation: cambiandoColor 2.1s infinite alternate,
+    moviendoLetras 2.8s infinite;
+  transition: all 0.5s ease;
   color: $fondoRojo;
 }
 .l {
+  animation: cambiandoColor 0.5s infinite alternate,
+    moviendoLetras 2.4s infinite;
+  transition: all 0.5s ease;
   color: $FondoAzul;
 }
 .c {
+  animation: cambiandoColor 0.8s infinite alternate, moviendoLetras 2s infinite;
+  transition: all 0.5s ease;
   color: $fondoAzulClaro;
 }
 .e {
+  animation: cambiandoColor 1.7s infinite alternate,
+    moviendoLetras 1.6s infinite;
+  transition: all 0.5s ease;
   color: $fondoVioleta;
 }
 .s {
+  animation: cambiandoColor 2.8s infinite alternate,
+    moviendoLetras 1.2s infinite;
+  transition: all 0.5s ease;
   color: $fondoVerde;
 }
 
-h1 .o {
+.o {
+  animation: cambiandoColor 1.3s infinite alternate,
+    moviendoLetras 0.8s infinite;
+  transition: all 0.5s ease;
   color: $fondoVerde;
   text-transform: uppercase;
 }
 .p {
   color: $amarillo;
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 2s infinite alternate, moviendoLetras 0.4s infinite;
+  transition: all 0.5s ease;
 }
 .e {
   color: $fondoRojo;
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 1s infinite alternate, moviendoLetras 3.4s infinite;
+  transition: all 0.5s ease;
 }
 .r {
   color: $FondoAzul;
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 1.5s infinite alternate, moviendoLetras 3s infinite;
+  transition: all 0.5s ease;
 }
 .a {
   color: $fondoAzulClaro;
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 2.5s infinite alternate,
+    moviendoLetras 2.6s infinite;
+  transition: all 0.5s ease;
 }
 .c {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 3s infinite alternate, moviendoLetras 2.2s infinite;
+  transition: all 0.5s ease;
   color: $fondoVioleta;
 }
 .i {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 2.7s infinite alternate,
+    moviendoLetras 1.8s infinite;
+  transition: all 0.5s ease;
   color: $fondoVerde;
 }
 .od {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 2.2s infinite alternate,
+    moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease;
   color: $amarillo;
 }
 .n {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 3.2s infinite alternate, moviendoLetras 1s infinite;
+  transition: all 0.5s ease;
   color: $fondoRojo;
 }
 .e {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 1.2s infinite alternate, moviendoLetras 6s infinite;
+  transition: all 0.5s ease;
   color: $FondoAzul;
 }
 .s {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 1.6s infinite alternate,
+    moviendoLetras 0.2s infinite;
+  transition: all 0.5s ease;
   color: $fondoAzulClaro;
 }
 
@@ -137,7 +171,13 @@ h1 .o {
   }
 }
 @media (min-width: 780px) {
-  h1 .o {
+  h1 {
     font-size: $fontSizeLogo;
+    font-weight: $bold;
+  }
+  .o,
+  .d {
+    font-weight: $bold;
+    font-size: $fontSizeLogodos;
   }
 }

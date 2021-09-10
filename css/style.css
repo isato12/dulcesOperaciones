@@ -94,6 +94,20 @@ h1 {
   100% {
     color: #94a21f; } }
 
+@keyframes moviendoLetras {
+  0% {
+    transform: rotatex(10deg); }
+  20% {
+    transform: rotatex(-10deg); }
+  40% {
+    transform: rotatex(20deg); }
+  60% {
+    transform: rotatex(-20deg); }
+  80% {
+    transform: rotatex(20deg); }
+  100% {
+    transform: rotatex(-20deg); } }
+
 .wave {
   background-image: url(../assets/header.png);
   background-repeat: no-repeat;
@@ -148,65 +162,89 @@ h1 {
   padding-top: 2rem; }
 
 .d {
-  color: #94a21f; }
+  color: #94a21f;
+  animation: cambiandoColor 1.4s infinite alternate, moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease; }
 
 .u {
+  animation: cambiandoColor 2.1s infinite alternate, moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease;
   color: #ff0000; }
 
 .l {
+  animation: cambiandoColor 0.5s infinite alternate, moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease;
   color: #2c3fea; }
 
 .c {
+  animation: cambiandoColor 0.8s infinite alternate, moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease;
   color: #2ca1d7; }
 
 .e {
+  animation: cambiandoColor 1.7s infinite alternate, moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease;
   color: #7b1fa2; }
 
 .s {
+  animation: cambiandoColor 2.8s infinite alternate, moviendoLetras .8s infinite;
+  transition: all 0.5s ease;
   color: #12d552; }
 
-h1 .o {
+.o {
+  animation: cambiandoColor 1.3s infinite alternate, moviendoLetras .8s infinite;
+  transition: all 0.5s ease;
   color: #12d552;
   text-transform: uppercase; }
 
 .p {
   color: #94a21f;
-  animation: cambiandoColor 2s infinite alternate; }
+  animation: cambiandoColor 2s infinite alternate, moviendoLetras .4s infinite;
+  transition: all 0.5s ease; }
 
 .e {
   color: #ff0000;
-  animation: cambiandoColor 2s infinite alternate; }
+  animation: cambiandoColor 1s infinite alternate, moviendoLetras 3.4s infinite;
+  transition: all 0.5s ease; }
 
 .r {
   color: #2c3fea;
-  animation: cambiandoColor 2s infinite alternate; }
+  animation: cambiandoColor 1.5s infinite alternate, moviendoLetras 3s infinite;
+  transition: all 0.5s ease; }
 
 .a {
   color: #2ca1d7;
-  animation: cambiandoColor 2s infinite alternate; }
+  animation: cambiandoColor 2.5s infinite alternate, moviendoLetras 2.6s infinite;
+  transition: all 0.5s ease; }
 
 .c {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 3s infinite alternate, moviendoLetras 2.2s infinite;
+  transition: all 0.5s ease;
   color: #7b1fa2; }
 
 .i {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 2.7s infinite alternate, moviendoLetras 1.8s infinite;
+  transition: all 0.5s ease;
   color: #12d552; }
 
 .od {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 2.2s infinite alternate, moviendoLetras 1.4s infinite;
+  transition: all 0.5s ease;
   color: #94a21f; }
 
 .n {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 3.2s infinite alternate, moviendoLetras 1s infinite;
+  transition: all 0.5s ease;
   color: #ff0000; }
 
 .e {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 1.2s infinite alternate, moviendoLetras 6s infinite;
+  transition: all 0.5s ease;
   color: #2c3fea; }
 
 .s {
-  animation: cambiandoColor 2s infinite alternate;
+  animation: cambiandoColor 1.6s infinite alternate, moviendoLetras .2s infinite;
+  transition: all 0.5s ease;
   color: #2ca1d7; }
 
 .parhero {
